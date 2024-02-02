@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+}
+
+*,*::after, *::before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'starwars';
+  src: url('../fonts/StarJediOutliney0xm.woff2') format('woff2'),
+    url('../fonts/StarJediOutliney0xm.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'starwars';
+  src: url('../fonts/StarJediRoundedjW3R.woff2') format('woff2'),
+    url('../fonts/StarJediRoundedjW3R.woff') format('woff');
+  font-weight: 400;
+  font-style: bold;
+  font-display: swap;
+}
+
+body {
+  font-family: 'starwars', serif;
+}
+
+.app {
+  padding-bottom: 50px;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../img/dw.jpg');
+  background-size: cover;
+  background-color: black;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(33, 33, 33, .5);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 50px;
+  color: white;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+}
+
+.image {
+  margin-bottom: 70px;
+  width: 100%;
+}
+
+.back {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  background-color: transparent;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.text {
+  margin: 0;
+  margin-bottom: 50px;
+  width: 80%;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.sections {
+  width: 80%;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  color: white;
+  list-style: none;
+  font-size: 15px;
+}
+
+.list:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.list li {
+  margin-bottom: 20px;
+  width: calc((100% - 60px) / 3);
+}
+
+.list li:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  padding: 30px;
+  border: 1px solid rgb(167, 154, 154);
+  border-radius: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
